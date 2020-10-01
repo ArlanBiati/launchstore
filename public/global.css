@@ -1,6 +1,6 @@
 :root {
   --primary-color: #fd951f;
-  --secondary-color: #1fd4fd;
+  --secondary-color: #1f83fd;
 }
 
 * {
@@ -67,5 +67,21 @@ body {
 
 .button:hover {
   background-color: #d7780b;
+}
+
+.button.delete {
+  background-color: lightgrey;
+}
+
+.button.delete:hover {
+  background-color: rgb(223, 62, 62);
+}
+
+.button.edit {
+  background-color: var(--secondary-color);
+}
+
+.button.edit:hover {
+  background-color: #065ac1;
 }
 
