@@ -30,10 +30,15 @@
 <div class="item">
   <div>Fotos</div>
   <div>
+    {# div que contem o botão (input) de adicionar fotos #}
     <div id="photos-upload">
+      {# accept --> image/* -- aceita todos os tipos de imagem e somente imagem #}
+      {# multiple --> aceita varios arquivos (quantidade) #}
+      {# onchange --> evento de mudança que pega o input (arquivos adicionados)  #}
       <input id="photos-input" type="file" name="photos" accept="image/*" onchange="PhotosUpload.handleFileInput(event)" multiple="multiple">
       <p>Selecione até 6 Fotos</p>
     </div>
+    {# div que apresentara as fotos selecionados pelo usuario #}
     <div id="photos-preview"></div>
   </div>
 </div>
